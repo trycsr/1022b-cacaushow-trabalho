@@ -1,13 +1,15 @@
 CREATE DATABASE cacaushow;
 USE cacaushow;
 CREATE TABLE IF NOT EXISTS chocolates(
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50),
     descricao VARCHAR(50),
     preco DECIMAL(10,2),
     imagem VARCHAR(300)
 );
 INSERT INTO chocolates VALUES (1,'LaCreme Barra','Queridinho da Casa',20.00,'SEM IMAGEM');
+INSERT INTO chocolates VALUES (2,'MonteBello Bombom','Mais Vendido',16.00,'SEM IMAGEM');
+INSERT INTO chocolates VALUES (3,'Fondue','Cremoso e Bom',22.00,'SEM IMAGEM');
 
 USE cacaushow;
 CREATE TABLE IF NOT EXISTS cliente(
@@ -52,3 +54,4 @@ CREATE TABLE IF NOT EXISTS promocoes(
 INSERT INTO promocoes VALUES (11111,'Dia dos namorados na cacau','Venha comprar o presente do seu benzinho na cacau','2025-06-12','CACAULOVE');
 INSERT INTO promocoes VALUES (22222,'A cacau no seu natal','Um natal ainda mais doce na cacau','2025-12-26','CHOCOSHOW');
 INSERT INTO promocoes VALUES (33333,'Pascoa show','O presente perfeito para sua pascoa','2025-04-20','COELINHO');
+
